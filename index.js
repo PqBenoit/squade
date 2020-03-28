@@ -25,7 +25,7 @@ var api = new ParseServer({
 });
 
 
-var options = { allowInsecureHTTP: false };
+var options = { allowInsecureHTTP: true };
 
 var dashboard = new ParseDashboard({
   apps: [
