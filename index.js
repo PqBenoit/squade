@@ -35,7 +35,14 @@ var dashboard = new ParseDashboard({
       masterKey: process.env.MASTER_KEY,
       appName: 'Squade'
     }
-  ]
+  ],
+  users: [
+    {
+      user: process.env.ADMIN_USERNAME,
+      pass: process.env.ADMIN_PASSWORD
+    },
+  ],
+  useEncryptedPasswords: false
 }, options);
 
 var app = express();
